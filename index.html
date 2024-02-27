@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chatter|App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- #2 #css #elements -->
+    <style>
+        body {
+            font-family: "Roboto", Arial, sans-serif;
+            /* #15 Font-family with fallback */
+        }
+        
+        h1,
+        h2,
+        p,
+        small {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1,
+        h2 {
+            color: #00838f;
+            /* #7, #8, #13 Correct color and bold for channel names */
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-size: smaller;
+            /* #10 Dates appear smaller */
+        }
+        
+        p {
+            background-color: #eeeeee;
+            /* #12 Light grey background for messages */
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        
+        small {
+            font-size: smaller;
+            /* #14 Username and date appear smaller */
+            color: #00838f;
+            /* #13 Username colored correctly */
+        }
+        
+        button {
+            background-color: #00838f;
+            /* #6 Buttons have correct background color */
+            color: #ffffff;
+            /* #7 Buttons text is white */
+            text-transform: uppercase;
+            font-size: 16px;
+            /* #7 Buttons text is uppercase */
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        button:hover {
+            background-color: #005662;
+            /* Darker shade of the button color on hover */
+        }
+        
+        input {
+            padding: 10px;
+            border: 1px solid #00838f;
+            /* Matching border color for input */
+            margin-right: 10px;
+            /* Add margin to separate input and button */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <section>
+        <h1>chatter | app</h1>
+
+        <h2>Favorites</h2>
+        <p><strong>MeetUp</strong><small>11:51</small></p>
+        <p><strong>Oktoberfest</strong><small>10:51</small></p>
+
+        <h2>Regular</h2>
+        <p><strong>WeatherChannel</strong><small>Yesterday</small></p>
+        <p><strong>SevenContinents</strong><small>23 May 2018</small></p>
+
+    </section>
+
+    <section>
+        <div>
+            <h1>MeetUp</h1>
+            <button>Favorite</button>
+        </div>
+
+        <div>
+            <h2>Jessie Koch</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia, nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab. ste vel ducimus blanditiis, tempora adipisci doloribus.
+            </p>
+            <small>11:45</small>
+        </div>
+
+        <div>
+            <h2>Jessie Koch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia, nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab. Iste vel ducimus blanditiis, tempora adipisci doloribus.</p>
+            <small>11:49</small>
+        </div>
+
+        <div>
+            <h2>Jessie Koch</h2>
+            <p>Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolor voluptas debitis deleniti iure consequatur saepe! Sed repellendus accusantium neque nemo doloremque ipsa deleniti. Cumque rem repudiandae accusamus dolores
+                adipisci!.
+            </p>
+            <small>11:49</small>
+        </div>
+
+        <div>
+            <input type="text">
+            <button>Send</button>
+        </div>
+    </section>
 </body>
+
 </html>
